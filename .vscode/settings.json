@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "pgOptions": {
+        "ssl": true
+      },
+      "previewLimit": 50,
+      "server": "ep-morning-mode-930827.us-east-2.aws.neon.tech",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "Neon DB",
+      "database": "neondb",
+      "username": "brunorafaelap",
+      "password": "A15sjXWDifEo"
+    }
+  ]
+}
