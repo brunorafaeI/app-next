@@ -12,11 +12,11 @@ const API_BASE_URL = 'http://localhost:8080'
 
 export const httpClient = {
   request: async ({ 
-    path, 
-    method, 
-    params = {}, 
-    body = '', 
-    headers = {} 
+    path,
+    method,
+    params = {},
+    body = '',
+    headers = {}
   }: HttpClientProps) => {
     const _settings = {
       method,
