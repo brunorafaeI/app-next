@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "pg",
-  "id": "56a0d0cd-6bca-494a-a279-5ed5a053cefa",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "224ed102-f2b6-4409-b9ba-19fc0e7d0e3f",
+  "prevId": "56a0d0cd-6bca-494a-a279-5ed5a053cefa",
   "tables": {
     "users": {
       "name": "users",
@@ -22,22 +22,29 @@
         },
         "phone": {
           "name": "phone",
-          "type": "varchar(256)",
+          "type": "varchar(22)",
           "primaryKey": false,
           "notNull": false
         },
         "created_at": {
           "name": "created_at",
-          "type": "timestamp with time zone",
+          "type": "date",
           "primaryKey": false,
-          "notNull": false,
-          "default": "now()"
+          "notNull": false
         }
       },
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "users_full_name_unique": {
+          "name": "users_full_name_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "full_name"
+          ]
+        }
+      }
     }
   },
   "enums": {},

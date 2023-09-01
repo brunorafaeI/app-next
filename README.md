@@ -32,3 +32,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Note
+> After deploying your application on Vercel, go to settings / integrations and search for 'Neon'. Then click on 'Add integration' and select the scope in Vercel (account) and select your project. Now you just need to fill in the information to create the database, after that all the necessary configurations will be integrated into Vercel for your project.
